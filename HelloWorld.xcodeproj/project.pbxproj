@@ -12,6 +12,7 @@
 		1142D21B23A94DF20022571E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1142D21A23A94DF20022571E /* Assets.xcassets */; };
 		1142D21E23A94DF20022571E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1142D21C23A94DF20022571E /* LaunchScreen.storyboard */; };
 		1142D22623A94EA40022571E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1142D22523A94EA40022571E /* AppDelegate.swift */; };
+		1142D22823A94F420022571E /* Notes in Resources */ = {isa = PBXBuildFile; fileRef = 1142D22723A94F420022571E /* Notes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1142D21D23A94DF20022571E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1142D21F23A94DF20022571E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1142D22523A94EA40022571E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1142D22723A94F420022571E /* Notes */ = {isa = PBXFileReference; lastKnownFileType = text; path = Notes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,55 @@
 		1142D21223A94DEF0022571E /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				1142D22523A94EA40022571E /* AppDelegate.swift */,
-				1142D21523A94DEF0022571E /* ViewController.swift */,
-				1142D21723A94DEF0022571E /* Main.storyboard */,
-				1142D21A23A94DF20022571E /* Assets.xcassets */,
-				1142D21C23A94DF20022571E /* LaunchScreen.storyboard */,
-				1142D21F23A94DF20022571E /* Info.plist */,
+				1142D22723A94F420022571E /* Notes */,
+				1142D22923A94F740022571E /* MVC */,
+				1142D22D23A950F60022571E /* SupportingFiles */,
 			);
 			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		1142D22923A94F740022571E /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				1142D22523A94EA40022571E /* AppDelegate.swift */,
+				1142D22C23A950380022571E /* Model */,
+				1142D22A23A9500D0022571E /* Controller */,
+				1142D22B23A950280022571E /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		1142D22A23A9500D0022571E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1142D21523A94DEF0022571E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1142D22B23A950280022571E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1142D21723A94DEF0022571E /* Main.storyboard */,
+				1142D21C23A94DF20022571E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1142D22C23A950380022571E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1142D22D23A950F60022571E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1142D21A23A94DF20022571E /* Assets.xcassets */,
+				1142D21F23A94DF20022571E /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +167,7 @@
 			files = (
 				1142D21E23A94DF20022571E /* LaunchScreen.storyboard in Resources */,
 				1142D21B23A94DF20022571E /* Assets.xcassets in Resources */,
+				1142D22823A94F420022571E /* Notes in Resources */,
 				1142D21923A94DEF0022571E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GMM5PZTRAF;
-				INFOPLIST_FILE = HelloWorld/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HelloWorld/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GMM5PZTRAF;
-				INFOPLIST_FILE = HelloWorld/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/HelloWorld/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
