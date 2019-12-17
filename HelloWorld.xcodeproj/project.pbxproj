@@ -67,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1142D22523A94EA40022571E /* AppDelegate.swift */,
+				1142D22E23A9579C0022571E /* New Group */,
 				1142D22C23A950380022571E /* Model */,
 				1142D22A23A9500D0022571E /* Controller */,
 				1142D22B23A950280022571E /* View */,
@@ -105,6 +106,13 @@
 				1142D21F23A94DF20022571E /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1142D22E23A9579C0022571E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
